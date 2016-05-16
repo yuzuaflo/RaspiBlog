@@ -54,9 +54,9 @@ NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインスト�
 ターミナルを起動し、以下のコマンドを実行する。
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo reboot
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo reboot
 ```
 
 　
@@ -68,8 +68,8 @@ sudo reboot
 ターミナルを起動し、以下のコマンドを実行し、日本語フォントをインストールする。
 
 ```bash
-sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
-sudo reboot
+$ sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
+$ sudo reboot
 ```
 
 #### Raspberry Piの設定変更
@@ -89,6 +89,6 @@ sudo reboot
   * country jp japan
 
 ```bash
-sudo reboot
+$ sudo reboot
 ```
 
