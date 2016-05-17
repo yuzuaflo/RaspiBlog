@@ -17,12 +17,12 @@ NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインスト�
 　
 
 ### 1. 準備するもの
-1. Raspberry Pi本体
-2. microSD (class 10/8GB以上推奨)
-3. HDMIケーブル
-4. LANケーブル
-5. USB電源アダプタ、microUSBケーブル(スマートフォン用のものでよい)
-6. ディスプレイ、マウス、キーボード
+* Raspberry Pi本体
+* microSD (class 10/8GB以上推奨)
+* HDMIケーブル
+* LANケーブル
+* USB電源アダプタ、microUSBケーブル(スマートフォン用のものでよい)
+* ディスプレイ、マウス、キーボード
 
 　
 
