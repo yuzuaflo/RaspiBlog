@@ -34,29 +34,30 @@ NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインスト�
 
 #### NOOBSのダウンロード
 
-* こちら↓↓のページからDownload ZIPでダウンロードする。
+* こちら↓↓のページからDownload ZIPでダウンロードします。
 * [https://www.raspberrypi.org/downloads/noobs/](https://www.raspberrypi.org/downloads/noobs/)
-* ZIPファイルを展開して、microSDのルートにコピーする。
+* ZIPファイルを展開して、microSDのルートにコピーします。
 
 　
 
 ### 3. Raspbianのインストール
-* 上記の手順2 で作成したインストール用のmicroSDをRaspberry Piにセットする。
-* HDMI、キーボード、マウス、LANケーブルをRaspberry Piに接続する。
-* microUSBをRaspberry Piに接続する。
+* 上記の手順2 で作成したインストール用のmicroSDをRaspberry Piにセットします。
+* HDMI、キーボード、マウス、LANケーブルをRaspberry Piに接続します。
+* microUSBをRaspberry Piに接続します。
   * Raspberry Piの電源がオンになります。(Raspberry PiのLEDが点灯します。)
-* OSのインストール画面が表示されるので、Raspbianを選択してInstallボタンを押下する。
+* OSのインストール画面が表示されるので、Raspbianを選択してInstallボタンを押下します。
 ![Image of Install]({{site.baseurl}}/images/install.png)
 
 　
 
 ### 4. Raspbianファームウェア、パッケージのアップデート
-ターミナルを起動し、以下のコマンドを実行する。
+ターミナルを起動し、以下のコマンドを実行します。
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo reboot
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo rpi-update
+$ sudo reboot
 ```
 
 　
@@ -65,14 +66,18 @@ sudo reboot
 
 #### 日本語フォントのインストール
 
-ターミナルを起動し、以下のコマンドを実行し、日本語フォントをインストールする。
+ターミナルを起動し、以下のコマンドを実行し、日本語フォントをインストールします。
 
 ```bash
-sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
-sudo reboot
+$ sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
+$ sudo reboot
 ```
 
+　
+
 #### Raspberry Piの設定変更
+
+GUIメニューから以下の設定を行います。
 
 * menu → preferences → raspberry pi configuration → localisation
 * set localeの設定
@@ -88,7 +93,9 @@ sudo reboot
 * wifi countryの設定
   * country jp japan
 
+設定が終了したらRaspberry Piを再起動します。
+
 ```bash
-sudo reboot
+$ sudo reboot
 ```
 
