@@ -15,6 +15,6 @@ layout: default
 <nav id="tags">
   <span>タグ:</span>
   {% for tag in page.tags %}
-  <a href="/tags#tag_{{ tag }}">{{ tag }}</a>
+  <a href="{{ site.baseurl }}/tags#tag_{{ tag }}">{{ tag }}</a>
   {% endfor %}
 </nav>
