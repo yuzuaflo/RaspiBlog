@@ -2,7 +2,8 @@
 layout: post
 title:  "温湿度センサを使ってみよう(AE-BME280)"
 date:   2016-05-17 21:00:00 +0900
-categories: raspberry pi 
+categories: raspberrypi
+tags: raspberrypi i2c breadboard
 ---
 Raspberry Piに温湿度センサモジュールをつなげてみます。
 

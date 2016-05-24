@@ -9,7 +9,7 @@
     // Positioning context for the mobile navigation icon
     position: relative;
 
-    background-color: rgb(255, 225, 255);
+    background-color: $background-pink;
 }
 
 .site-title {
@@ -102,7 +102,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-color: rgb(255, 225, 255);
+    background-color: $background-pink;
 }
 
 .footer-heading {

@@ -2,7 +2,8 @@
 layout: post
 title:  "Raspberry PiのOSインストール"
 date:   2016-05-16 21:00:00 +0900
-categories: raspberry pi 
+categories: raspberrypi
+tags: raspberrypi raspbian
 ---
 Raspberry PiのOSインストール
 NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインストールする手順です。
