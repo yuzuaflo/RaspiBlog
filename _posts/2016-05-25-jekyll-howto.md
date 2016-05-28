@@ -5,6 +5,10 @@ date:   2016-05-28 16:00:00 +0900
 categories: jekyll
 tags: [jekyll, github pages]
 ---
+※ 今回は、Raspberry Piに全然関係ないネタになりますが、ご了承ください。
+
+　
+
 Jekyll + GitHub Pagesでブログサイトを作成します。
 
 このサイトもJekyll + GitHub Pagesの組み合わせで作成されています。
@@ -14,17 +18,23 @@ Jekyll + GitHub Pagesでブログサイトを作成します。
 ## Jekyllとは？
 [Jekyll](http://jekyllrb-ja.github.io/)を使うと
 マークダウンファイルから静的Webサイトやブログを簡単に作成することができます。
+
 　
 
 ## Jekyllのインストール
 [Jekyllのインストール方法](http://jekyllrb-ja.github.io/docs/installation/)に詳細なインストール方法が記載されています。
 
-私は、Mac OS Xを使っているので、Ruby/RubyGemsもすでにインストールされていました。
-
-以下のコマンドを実行するだけで簡単にインストールできました。
+Mac OS Xを使っている方は、Ruby/RubyGemsもすでにインストールされているので、以下のコマンドを実行するだけで簡単にインストールができます。
 
 ```bash
 $ gem install jekyll
+```
+
+　
+
+バージョンを確認します。
+
+```bash
 $ jekyll --version
 jekyll 3.1.3
 ```
@@ -36,7 +46,7 @@ jekyll 3.1.3
 ## Jekyllでブログサイトのひな形を作成
 jekyll newコマンドで、簡単なブログサイトのひな形を作成してくれます。
 
-また、jekyll serveコマンドで、ローカルサーバで作成したブログサイトの内容を確認できます。
+また、jekyll serveコマンドで、ローカルサーバを立ち上げて、作成したブログサイトの内容を確認できます。
 
 jekyllsampleというサイトを作ってみます。
 
@@ -59,7 +69,9 @@ $ jekyll serve
 
 ![Image of Install]({{site.baseurl}}/images/jekyllsample_001.png)
 
-終了させたい場合は、ctrl-c でjekyll serveコマンドを終了させればOKです。
+ローカルサーバを終了させたい場合は、ctrl-c でjekyll serveコマンドを終了させればOKです。
+
+_config.yml 以外のファイルを更新する場合は、ローカルサーバを終了させなくても、ブラウザをリロードすれば更新が反映されます。
 
 　
 
@@ -79,9 +91,9 @@ _includes   _posts      _site       css         index.html
 
 ## GitHub Pagesで公開
 
-jekyllで作成されたページを、GitHub Pagesで無料で公開することができます。
+Jekyllで作成されたページを、GitHub Pagesで無料で公開することができます。
 
-ブログを作りたいだけなら、他のブログサービスを使用してもよいのですが、jekyll + GitHub Pagesのメリットは以下だと思います。
+ブログの作成だけなら、他のブログサービスを使用してもよいのですが、Jekyll + GitHub Pagesで作成するメリットは以下だと思います。
 
 * 無料
 * Webサーバを準備する必要がない
@@ -131,7 +143,7 @@ $ cd jekyllsample
 
 jekyllsampleディレクトリ内に、.gitignore ファイルを作成し、jekyllsampleレポジトリにpushしない対象を指定します。
 
-.gitignore
+_.gitignore_
 
 ```
 _site/
@@ -142,7 +154,7 @@ _site/
 
 _config.yml の baseurl を編集して、github.io のアドレスにしておきます。
 
-_config.yml
+_\_config.yml_
 
 ```yml
 baseurl: "http:/(GitHubユーザ名).github.io/jekyllsample" # the subpath of your site, e.g. /blog
@@ -168,7 +180,13 @@ git commit -m 'first commit'
 git push origin gh-pages
 ```
 
+　
+
 http://(ユーザ名).github.io/jekyllsample/ に、作成したサイトが公開されます。
+
+下記のリンクにジャンプすると、実際に私が作成したjekyllsampleのページを見ることができます。
+
+[http://yuzuaflo.github.io/jekyllsample](http://yuzuaflo.github.io/jekyllsample)
 
 　
 
