@@ -5,7 +5,7 @@ date:   2016-05-28 16:00:00 +0900
 categories: jekyll
 tags: [jekyll, github pages]
 ---
-※ 今回は、Raspberry Piに全然関係ないネタになりますが、ご了承ください。
+※ 今回は、Raspberry Piに全然関係ないネタになります。
 
 　
 
