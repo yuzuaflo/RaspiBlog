@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Tags
-permalink: /tags/
+title: Categories
+permalink: /categories/
 ---
 
-{% for tag in site.tags %}
+{% for category in site.categories %}
 <article>
-  <h3 id="tag_{{ tag[0] }}">{{ tag[0] }}</h3>
+  <h3 id="tag_{{ category[0] }}">{{ category[0] }}</h3>
   <ul>
-    {% for post in tag[1] %}
+    {% for post in category[1] %}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
