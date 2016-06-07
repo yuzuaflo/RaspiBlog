@@ -152,12 +152,12 @@ _site/
 
 　
 
-_config.yml の url を編集して、github.io のアドレスにしておきます。
+_config.yml の baseurl を編集して、github.io のアドレスにしておきます。
 
-_\_config.yml
+_\_config.yml_
 
 ```yml
-url: "http:/(GitHubユーザ名).github.io/jekyllsample" # the base hostname & protocol for your site
+baseurl: "http:/(GitHubユーザ名).github.io/jekyllsample" # the subpath of your site, e.g. /blog
 ```
 
 _config.yml を編集した場合は、jekyll serveコマンドを再起動する必要があります。
@@ -193,6 +193,16 @@ http://(ユーザ名).github.io/jekyllsample/ に、作成したサイトが公�
 　
 
 ### 公開後の編集
+
+_config.yml の baseurl を編集して GitHub Pagesのアドレスになっているので、そのままjekyll serveコマンドを使用すると、ローカルサーバでの表示がうまくできません。
+
+–baseurl オプションを使用して、baseurl を変更すると、ローカルサーバでも正しく表示ができます。
+
+```bash
+jekyll serve --baseurl ''
+```
+
+　
 
 追加のコンテンツを作成した際は、git add、git commit、git push をすれば、レポジトリが更新され、サイトも更新されます。
 
