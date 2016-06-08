@@ -11,19 +11,25 @@ USB赤外線リモコンキットを使って、エアコンや照明のオン�
 
 ## USB赤外線リモコンキットって？？
 
-わかりやすく言うと、家電のリモコンの代わりになるものです。
+簡単に言うと、家電のリモコンの代わりになるものです。
 
-今回は、ビット・トレード・ワン製 
-[USB赤外線リモコンキット](http://bit-trade-one.co.jp/BTOpicture/Products/005-RS/)
-を使用します。
+今回は、ビット・トレード・ワン製USB赤外線リモコンキットを使用します。
 
-( Amazonで売ってます
-[コチラ](http://www.amazon.co.jp/dp/B00AXVHQLC)
- からどうぞ )
+ビット・トレード・ワン社の製品紹介ページ : 
+[http://bit-trade-one.co.jp/BTOpicture/Products/005-RS/](http://bit-trade-one.co.jp/BTOpicture/Products/005-RS/)
+
+Amazonで購入できます。
+[http://www.amazon.co.jp/dp/B00AXVHQLC](http://www.amazon.co.jp/dp/B00AXVHQLC)
 
 　
 
-この製品の紹介ページでは、WindowsのPCから家庭用機器を操作したり、リモコンからPCを操作することができますと書いてありますが、コマンドのソースコードが公開されているので、Raspberry Piからもコマンドラインで操作することができます。
+見た目はこんな感じです。
+
+![]({{site.baseurl}}/images/usb_remocon_003.png)
+
+　
+
+製品紹介ページでは、WindowsのPCから家庭用機器を操作したり、リモコンからPCを操作することができますと書いてありますが、コマンドのソースコードが公開されているので、Raspberry Piからもコマンドラインで操作することができます。
 
 
 　
@@ -40,7 +46,7 @@ $ sudo apt-get install libusb-1.0.0 libusb-1.0.0-dev libusb-dev
 
 　
 
-### bto_ir_cmd のインストール
+### bto_ir_cmd の作成（ビルド）
 
 こちらのページ [https://github.com/kjmkznr/bto_ir_cmd](https://github.com/kjmkznr/bto_ir_cmd) から、git cloneもしくはDownload ZIPでダウンロードし、任意の場所に展開します。
 
