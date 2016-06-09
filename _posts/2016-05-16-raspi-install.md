@@ -5,19 +5,15 @@ date:   2016-05-16 21:00:00 +0900
 categories: raspberrypi
 tags: [raspberry pi, raspbian]
 ---
-Raspberry PiのOSインストール
-NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインストールする手順です。
+Raspberry PiのOSインストール方法をまとめました。
 
-## 概要
-1. 準備するもの
-2. OSインストール用microSDの作成
-3. Raspbianのインストール
-4. Raspbianファームウェア、パッケージのアップデート
-5. 日本語環境の設定
+NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインストールする手順です。
 
 　
 
-### 1. 準備するもの
+## 必要なものの準備
+Raspberry PiのOSインストールのためには、以下のものを準備する必要があります。
+
 * Raspberry Pi本体
 * microSD (class 10/8GB以上推奨)
 * HDMIケーブル
@@ -27,31 +23,52 @@ NOOBSを使用して、Raspberry Pi 3(もしくは2)にRaspbianをインスト�
 
 　
 
-### 2. OSインストール用microSDの作成
+## OSインストール用microSDの作成
 
-#### microSDのフォーマット
+### microSDのフォーマット
 
-* microSDをFATでフォーマットします。
+microSDをFATでフォーマットします。
 
-#### NOOBSのダウンロード
-
-* こちら↓↓のページからDownload ZIPでダウンロードします。
-* [https://www.raspberrypi.org/downloads/noobs/](https://www.raspberrypi.org/downloads/noobs/)
-* ZIPファイルを展開して、microSDのルートにコピーします。
+(exFATにしないように注意！)
 
 　
 
-### 3. Raspbianのインストール
-* 上記の手順2 で作成したインストール用のmicroSDをRaspberry Piにセットします。
-* HDMI、キーボード、マウス、LANケーブルをRaspberry Piに接続します。
-* microUSBをRaspberry Piに接続します。
-  * Raspberry Piの電源がオンになります。(Raspberry PiのLEDが点灯します。)
-* OSのインストール画面が表示されるので、Raspbianを選択してInstallボタンを押下します。
-![Image of Install]({{site.baseurl}}/images/install.png)
+### NOOBSのダウンロード
+
+Raspberry Piの公式サイトのダウンロードページから、NOOBSをDownload ZIPでダウンロードします。
+
+* 公式サイトダウンロードページ [https://www.raspberrypi.org/downloads/noobs/](https://www.raspberrypi.org/downloads/noobs/)
 
 　
 
-### 4. Raspbianファームウェア、パッケージのアップデート
+公式サイトは時間がかかることが多いので、ダウンロードがうまくいかなそうな場合は、ミラーサイトからダウンロードしてもよいかもしれません。
+
+* JAISTのミラーサイト [http://ftp.jaist.ac.jp/pub/raspberrypi/NOOBS/images/](http://ftp.jaist.ac.jp/pub/raspberrypi/NOOBS/images/)
+
+　
+
+ZIPファイルを展開して、microSDのルートディレクトリにコピーします。
+
+　
+
+## Raspbianのインストール
+
+作成したインストール用のmicroSDをRaspberry Piにセットします。
+
+HDMI、キーボード、マウス、LANケーブルをRaspberry Piに接続します。
+
+microUSBをRaspberry Piに接続します。
+
+Raspberry Piの電源がオンになります。(Raspberry PiのLEDが点灯します。)
+
+OSのインストール画面が表示されるので、Raspbianを選択してInstallボタンを押下します。
+
+![Image of Install]({{site.baseurl}}/images/install_001.png)
+
+　
+
+## Raspbianファームウェア、パッケージのアップデート
+
 ターミナルを起動し、以下のコマンドを実行します。
 
 ```bash
@@ -63,9 +80,9 @@ $ sudo reboot
 
 　
 
-### 5. 日本語環境の設定
+## 日本語環境の設定
 
-#### 日本語フォントのインストール
+### 日本語フォントのインストール
 
 ターミナルを起動し、以下のコマンドを実行し、日本語フォントをインストールします。
 
@@ -76,11 +93,22 @@ $ sudo reboot
 
 　
 
-#### Raspberry Piの設定変更
+### 日本語入力環境の設定
+
+Anthyをインストールします。
+
+```bash
+$ sudo apt-get install ibus-anthy
+```
+
+　
+
+### Raspberry Piの設定変更
 
 GUIメニューから以下の設定を行います。
 
 * menu → preferences → raspberry pi configuration → localisation
+
 * set localeの設定
   * language ja
   * country JP
@@ -93,6 +121,15 @@ GUIメニューから以下の設定を行います。
   * variant japanese
 * wifi countryの設定
   * country jp japan
+
+　
+
+スクリーンショットは日本語に変更された後のものになりますが、参考までに載せておきます。
+
+![Image of Install]({{site.baseurl}}/images/install_002.png)
+![Image of Install]({{site.baseurl}}/images/install_003.png)
+
+　
 
 設定が終了したらRaspberry Piを再起動します。
 
