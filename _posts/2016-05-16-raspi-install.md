@@ -103,6 +103,19 @@ $ sudo apt-get install ibus-anthy
 
 　
 
+### 自動起動の設定
+
+.bashrc に以下の4行を追加します。
+
+```bash
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon -d -x
+```
+
+　
+
 ### Raspberry Piの設定変更
 
 GUIメニューから以下の設定を行います。
@@ -137,3 +150,8 @@ GUIメニューから以下の設定を行います。
 $ sudo reboot
 ```
 
+　
+
+こちらのサイトを参考にさせていただきました！
+
+[ツール・ラボ RaspberryPi電子工作入門](https://tool-lab.com/make-course/raspberrypi/)
