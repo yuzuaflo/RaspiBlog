@@ -121,7 +121,7 @@ python27/bme280_sample.py を使用します。
 Raspberry Pi内の任意のフォルダに bme280_sample.py を作成して、以下のように実行します。
 
 ```bash
-$ python bme280_sample.py
+$ sudo python bme280_sample.py
 temp : 26.72  ℃
 pressure : 1020.46 hPa
 hum :  37.85 ％
