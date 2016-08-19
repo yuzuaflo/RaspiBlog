@@ -82,7 +82,7 @@ i2c-tools、python-smbus をインストールします。
 
 ```bash
 $ sudo apt-get install i2c-tools
-$ sudo apt-get python-smbus
+$ sudo apt-get install python-smbus
 ```
 
 　
