@@ -217,3 +217,19 @@ pre {
         }
     }
 }
+
+/**
+ * add
+ */
+.mbtablestyle {
+        border-collapse: collapse;
+
+   > table, td, th {
+        border: 1px solid darkgray;
+        }
+
+   > table, th {
+        text-align: center;
+        background: seagreen;
+        }
+}
