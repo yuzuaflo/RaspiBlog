@@ -7,7 +7,7 @@ tags: [raspberry pi, slack, hubot]
 ---
 
 
-[前の記事]({{ page.previous.url }})では、Hubotのインストールを行いました。
+[前の記事]({{site.baseurl}}{{page.previous.url}})では、Hubotのインストールを行いました。
 
 　
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Minecraft Pi Editonで遊ぼう(VNC編)"
-date:   2017-01-05 23:00:00 +0900
+date:   2017-01-06 21:00:00 +0900
 categories: raspberrypi
 tags: [raspberry pi, minecraft, vnc]
 ---
 
-[前の記事]({{ page.previous.url }})では、Minecraft Pi Editionの基本操作を紹介しました。
+[前の記事]({{site.baseurl}}{{page.previous.url}})では、Minecraft Pi Editionの基本操作を紹介しました。
 
 　
 
