@@ -9,10 +9,10 @@
 title: Raspberry Pi Blog
 email: 
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "http://yuzuaflo.github.io/RaspiBlog" # the subpath of your site, e.g. /blog
+baseurl: "http://yuzuafro.github.io/RaspiBlog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: yuzu_aflo1018
-github_username:  yuzuaflo
+twitter_username: yuzu_afro
+github_username:  yuzuafro
 
 # Build settings
 markdown: kramdown

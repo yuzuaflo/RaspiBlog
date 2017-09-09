@@ -188,7 +188,7 @@ http://(ユーザ名).github.io/jekyllsample/ に、作成したサイトが公�
 
 下記のリンクにジャンプすると、実際に私が作成したjekyllsampleのページを見ることができます。
 
-[http://yuzuaflo.github.io/jekyllsample](http://yuzuaflo.github.io/jekyllsample)
+[http://yuzuafro.github.io/jekyllsample](http://yuzuafro.github.io/jekyllsample)
 
 　
 
